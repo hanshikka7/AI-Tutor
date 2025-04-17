@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Log In - Access your AI tutoring account to unlock personalized learning experiences." />
+  <link rel="icon" href="public/hero.png" />
+  <meta name="build-by" content="Hanshikka" />
+  
+  <!-- Open Graph Meta Tags for sharing -->
+  <meta property="og:title" content="Log In - AI Tutoring App" />
+  <meta property="og:description" content="Access your AI tutoring account to unlock personalized learning experiences." />
+  <meta property="og:image" content="https://hanshikka7.github.io/AI-Tutor/public/hero.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/login.html" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Log In - AI Tutoring App" />
+  <meta name="twitter:description" content="Access your AI tutoring account to unlock personalized learning experiences." />
+  <meta name="twitter:image" content="https://hanshikka7.github.io/AI-Tutor/public/hero.png" />
+  
+  <title>Wine Red Login Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white flex items-center justify-center h-screen relative">
+  <!-- Logo at top left corner with added text -->
+  <div class="absolute top-5 left-5">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="public/gemini.svg" alt="Logo" class="h-10">
+      <span class="text-lg font-semibold text-black">AI Tutor</span>
+    </a>
+  </div>
+  
+  <div class="container flex items-center justify-center h-full">
+    <div class="right-panel flex flex-1 items-center justify-center p-10">
+      <form class="login-form w-full max-w-[350px] bg-[#0e0d0d] p-5 rounded text-white" action="login_process.php" method="POST">
+        <h2 class="mb-6 text-center text-xl font-semibold">Sign In</h2>
+        <input type="email" name="email" placeholder="Email Address" required class="w-full mb-5 p-3 border-b-2 border-[#8B0000] bg-transparent text-white focus:outline-none" />
+        <input type="password" name="password" placeholder="Password" required class="w-full mb-5 p-3 border-b-2 border-[#8B0000] bg-transparent text-white focus:outline-none" />
+        <!-- Updated Sign In button -->
+        <button type="submit" class="w-full py-2 bg-[#8B0000] rounded-full text-white font-bold text-base mb-3 transition-colors hover:bg-[#a50000]">
+          Sign In
+        </button>
+        <!-- Forgot password link moved to the right -->
+        <p class="text-right text-sm text-white mb-5">
+          <a href="forgot_password.html" class="underline">Forgot password?</a>
+        </p>
+        <!-- Divider with "or" centered inside -->
+        <div class="text-center mb-5 text-sm text-gray-500">or</div>
+        <!-- Updated Google button with fully rounded shape -->
+        <button type="button" class="w-full mx-auto flex items-center py-1 justify-center gap-2 p-2 bg-white border border-gray-300 rounded-full cursor-pointer text-base text-black font-medium">
+          <svg width="24" viewBox="-3 0 262 262" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path>
+              <path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path>
+              <path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path>
+              <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path>
+            </g>
+          </svg>
+          <span>Sign in with Google</span>
+        </button>
+        <!-- New option under the Google button moved to the right -->
+        <p class="text-center mt-5 text-white text-sm">
+          Don't have an account? <a href="signup.html" class="underline">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
